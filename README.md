@@ -9,7 +9,7 @@ Clone the repository.
 
 Run `npm install` in the root.
 
-## Getting Started
+## Run the project
 
 First, run the development server:
 
