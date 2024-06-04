@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { LinkWithBorder } from './index';
 
 const meta = {
-  title: 'Workshop/Chapter-1/LinkWithBorder',
+  title: 'Specific/LinkWithBorder',
   component: LinkWithBorder,
   parameters: {
     layout: 'centered',
