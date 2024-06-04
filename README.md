@@ -1,12 +1,9 @@
 # Shopmacher React Workshop
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Installation
 
 Make sure to have installed
-- Node v18.17.0
-- NPM 9.6.7 (comes with Node)
+- Node v18.20.3 (LTS)
 
 Clone the repository.
 
