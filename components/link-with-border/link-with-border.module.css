@@ -6,8 +6,15 @@
     cursor: pointer;
     width: 100%;
     display: block;
+    position: relative;
 }
 .link:link, .link:visited {
     text-decoration: none;
     color: #000;
+}
+
+.arrow {
+    position: absolute;
+    top: 12px;
+    right: 0;
 }

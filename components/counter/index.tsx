@@ -1,13 +1,40 @@
+import { useCallback, useState } from "react";
 import styles from "./counter.module.css";
+import { Typography } from "../typography";
+import classNames from "classnames";
 
 interface CounterProps {
 }
 
-// An exported function with the name you want to use for the component
 export const Counter = ({
 }: CounterProps) => {
-  // A return Statement
-  // Inside here you basically write HTML.
-  // It is called JSX and only has a few little differences to HTML
-  return <div className={styles.counter}>Counter</div>;
+  const [count, setCount] = useState(20);
+
+  const reduceCount = useCallback(() => {
+    if (count > 0) {
+      setCount(prevCount => prevCount - 1);
+    }
+  }, [count]);
+
+  const addCount = useCallback(() => {
+      setCount(prevCount => prevCount + 1);
+  }, []);
+
+  return <div className={styles.counter}>
+    <div onClick={reduceCount} className={classNames(styles.button, {
+      [styles[`button--reduce`]]: true
+    })}>
+      -
+    </div>
+    <div className={styles.number}>
+      <Typography color="black" fontSize="140">
+        {count}
+      </Typography>
+    </div>
+    <div onClick={addCount} className={classNames(styles.button, {
+      [styles[`button--add`]]: true
+    })}>
+      +
+    </div>
+  </div>;
 };

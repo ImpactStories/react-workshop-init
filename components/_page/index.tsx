@@ -4,6 +4,7 @@ import { InputTransparent } from "../input-transparent";
 import { Typography } from "../typography";
 import { Button } from "../button";
 import { LinkWithBorder } from "../link-with-border";
+import { Counter } from "../counter";
 
 export const Page = () => {
   return (
@@ -29,7 +30,7 @@ export const Page = () => {
       </Card>
 
       <Card title="The Linklist" backgroundColoring="white">
-        The Holidaycounter
+        <Counter />
       </Card>
 
       <Card title="The Time" backgroundColoring="red">
