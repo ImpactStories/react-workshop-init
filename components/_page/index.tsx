@@ -1,3 +1,4 @@
+"use client";
 import { Card } from "../card";
 import styles from "./page.module.css";
 import { InputTransparent } from "../input-transparent";
